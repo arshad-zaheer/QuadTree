@@ -12,6 +12,7 @@ Each element of the tree contains up to 4 child elements
 
 Print Out Rules
 Print the tree in the following sequence:
+
 This Element
      Much Smaller subtree
      Smaller subtree
