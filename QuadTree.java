@@ -14,6 +14,7 @@
  * @version 1.0
  * @since 2025-11-21, Core Implementation 1.0
  */
+import java.util.Arrays;
 public class QuadTree {
 
     static final int MUCH_BIGGER_THRESHOLD = 10; // as requried from the assignment, sets the thresholds for buckets
@@ -50,6 +51,7 @@ public class QuadTree {
      */
     public QuadTree(int[] input) {
         // Build the quadtree
+        System.out.println("QuadTree input int array:"+ Arrays.toString(input));
         this.root = buildQuadtree(input);
     }
 
@@ -186,9 +188,7 @@ public class QuadTree {
         QuadTree q = new QuadTree(input);
 
         // Print the quadtree structure
-        System.out.println("Printing QuadTree");
         printTree(q);
-        System.out.println(q.root.muchSmaller.value);
     }
 
     /**
