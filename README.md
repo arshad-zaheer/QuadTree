@@ -25,7 +25,15 @@ Print the tree in the following sequence:<br>
 3. Child nodes that are null are not printed when walking the tree to print.
 
 **Example execution:** <br>
+<pre><code>
+   int[] input = {100, 11, 9, 100, 13, 4, 200};
 
+        // Build the quadtree
+        QuadTree q = new QuadTree(input);
+
+        // Print the quadtree structure
+        printTree(q);
+</code></pre><br><br>
 QuadTree input int array:[100, 11, 9, 100, 13, 4, 200] <br>
 Printing QuadTree<br>
 <pre><code>Root:100
