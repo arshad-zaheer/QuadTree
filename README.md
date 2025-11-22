@@ -14,10 +14,10 @@ Each element of the tree contains up to 4 child elements<br>
 Print the tree in the following sequence:<br>
 
 This Element<br>
-	-Much Smaller subtree<br>
-	-Smaller subtree<br>
-	-Bigger subtree<br>
-	-Much Bigger subtree<br>
+	- Much Smaller subtree<br>
+	- Smaller subtree<br>
+	- Bigger subtree<br>
+	- Much Bigger subtree<br>
 
 **Assumptions Inferred:**
 1. The root node of the tree is labelled as the "Root" when printing the quadtree
