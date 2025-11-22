@@ -14,10 +14,10 @@ Print Out Rules
 Print the tree in the following sequence:
 
 This Element
-     Much Smaller subtree
-     Smaller subtree
-     Bigger subtree
-     Much Bigger subtree
+	Much Smaller subtree
+	Smaller subtree
+	Bigger subtree
+	Much Bigger subtree
 
 Assumptions Inferred:
 1. The root node of the tree is labelled as the "Root" when printing the quadtree
