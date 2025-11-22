@@ -4,11 +4,11 @@ Sample implementation of a specialized **QuadTree** given the following requirem
 Design and implement a reusable class for Quaternary Trees.  Use your class to implement a function which takes an array of integers, puts it in a quaternary tree, then prints the quaternary tree using the following rules:
 
 **Quaternary Tree**
-Each element of the tree contains up to 4 child elements
-1st element - "Much Smaller" elements. Elements < ThisElement -10.
-2nd element - "Smaller" elements. Elements < ThisElement, excluding the Much Smaller elements.
-3rd element - "Bigger" elements. Elements > ThisElement, excluding the Much Bigger elements.
-4th element - "Much Bigger" elements. Elements > ThisElement + 10.
+Each element of the tree contains up to 4 child elements<br>
+1st element - "Much Smaller" elements. Elements < ThisElement -10.<br>
+2nd element - "Smaller" elements. Elements < ThisElement, excluding the Much Smaller elements.<br>
+3rd element - "Bigger" elements. Elements > ThisElement, excluding the Much Bigger elements.<br>
+4th element - "Much Bigger" elements. Elements > ThisElement + 10.<br>
 
 **Print Out Rules**
 Print the tree in the following sequence:
