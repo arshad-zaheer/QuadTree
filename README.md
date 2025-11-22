@@ -1,4 +1,4 @@
-# QuadTree
+### QuadTree <br>
 Sample implementation of a specialized **QuadTree** given the following requirements:
 
 Design and implement a reusable class for Quaternary Trees.  Implement a function which takes an array of integers, puts it in a quaternary tree, then prints the quaternary tree using the following rules:
@@ -23,6 +23,11 @@ Print the tree in the following sequence:<br>
 1. The root node of the tree is labelled as the "Root" when printing the quadtree
 2. Duplicate nodes are not allowed, based on the rules defined for the child nodes it appears this to be the only valid outcome
 3. Child nodes that are null are not printed when walking the tree to print.
+
+## Files
+**Node.java** - DataStructure class for nodes making up the QuadTree<br>
+**QuadTree.java** - Main class for creating and structuring the QuadTree<br>
+**QuadTreeTest.java** - JUnit test class for executing sample tests<br>
 
 **Example execution:** <br>
 <pre><code>
