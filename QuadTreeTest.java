@@ -9,13 +9,18 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
 class QuadTreeTest {
+    private static final Logger logger = Logger.getLogger(QuadTreeTest.class.getName());
 
     /**
      * Test the printTree() method for a QuadTree with a single element.
      */
     @Test
     void testPrintTreeWithSingleElement() {
+        logger.log(Level.INFO, "Testing printTree with single element");
         int[] input = {10};
         QuadTree quadTree = new QuadTree(input);
 
@@ -25,6 +30,7 @@ class QuadTreeTest {
 
         // Execute printTree to verify it does not throw any exceptions
         QuadTree.printTree(quadTree);
+        
     }
 
     /**
@@ -32,6 +38,7 @@ class QuadTreeTest {
      */
     @Test
     void testPrintTreeWithMultipleElements() {
+        logger.log(Level.INFO, "Testing printTree with multiple elements");
         int[] input = {100, 50, 150, 30, 60, 110, 200};
         QuadTree quadTree = new QuadTree(input);
 
@@ -55,6 +62,7 @@ class QuadTreeTest {
      */
     @Test
     void testPrintTreeWithEmptyTree() {
+        logger.log(Level.INFO, "Testing printTree with empty tree");
         QuadTree quadTree = new QuadTree();
 
         // Ensure the root is null
@@ -69,6 +77,7 @@ class QuadTreeTest {
      */
     @Test
     void testPrintTreeWithDistributedNodes() {
+        logger.log(Level.INFO, "Testing printTree with distributed nodes");
         int[] input = {100, 50, 150, 90, 45, 5, 250, 1};
         QuadTree quadTree = new QuadTree(input);
         QuadTree.printTree(quadTree);
@@ -95,6 +104,7 @@ class QuadTreeTest {
      */
     @Test
     void testPrintTreeWithDuplicates() {
+        logger.log(Level.INFO, "Testing printTree with duplicate values");
         int[] input = {100, 50, 100, 150, 50, 250};
         QuadTree quadTree = new QuadTree(input);
         QuadTree.printTree(quadTree);
