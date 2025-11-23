@@ -8,7 +8,11 @@
  * @since 2025-11-21, Core Implementation 1.0
  */
 
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
 public class Node {
+    private static final Logger logger = Logger.getLogger(Node.class.getName());
 
     /**
      * Represents the value associated with a node in the structure.
@@ -46,6 +50,7 @@ public class Node {
      * @param value the integer value to be assigned to the node. This represents the value associated with the newly created node.
      */
     Node(int value) {
+        logger.log(Level.INFO, "Creating new Node with value: {0}", value);
         this.value = value;
         this.level = 0;
         this.muchSmaller = null; //initialize this child node to null to indicate a leaf node
@@ -61,6 +66,7 @@ public class Node {
      * @param level the hierarchical level to be assigned to the node within the structure.
      */
     Node(int value, int level) {
+        logger.log(Level.INFO, "Creating new Node with value: {0} and level: {1}", new Object[]{value, level});
         this.value = value; // int type cannot be null
         this.level = level;
         this.muchSmaller = null; //initialize this child node to null to indicate a leaf node
